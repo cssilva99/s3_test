@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "bucket" {
-  bucket = "logreceive"
+  bucket = "destbucket"
 }
 
 resource "aws_s3_bucket" "log_bucket" {
-  bucket = "logdelivery"
+  bucket = "sourcebucket"
 
   logging {
     target_bucket = "${aws_s3_bucket.bucket.id}"

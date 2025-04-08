@@ -1,5 +1,5 @@
-resource "aws_s3_bucket" "log_bucket" {
-  bucket = "buketname"
+resource "aws_s3_bucket" "versioning_bucket" {
+  bucket = "logbucket"
    
   tags = {
     Name        = "bkt"

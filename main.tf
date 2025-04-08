@@ -1,4 +1,4 @@
-resource "aws_s3_bucket" "originbucket" {
+resource "aws_s3_bucket" "bucket" {
   bucket = "logreceive"
 }
 

@@ -1,10 +1,8 @@
-resource "aws_s3_bucket" "versioning_bucket" {
-  bucket = "ddrtestddrgereacaokd"
-   
-  tags = {
-    Name        = "bkt"
-    Environment = "Sandbox"
-    Owner       = "Narendra Yala",
-    DataType    = "Test files"  
+resource "aws_s3_bucket" "log_bucket" {
+  bucket = "logdelivery"
+
+  logging {
+    target_bucket = "${aws_s3_bucket.log_bucket.id}"
+    target_prefix = "log/"
   }
 }

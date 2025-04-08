@@ -1,8 +1,8 @@
-resource "aws_s3_bucket" "bucket" {
+resource "aws_s3_bucket" "sadsf" {
   bucket = "sadsf"
 }
 
-resource "aws_s3_bucket" "log_bucket" {
+resource "aws_s3_bucket" "sourcebusdfsdfdsfsdcket" {
   bucket = "sourcebusdfsdfdsfsdcket"
 
   logging {

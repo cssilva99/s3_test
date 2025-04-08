@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "versioning_bucket" {
-  bucket = "logbucket"
+  bucket = "ddrtestddrgereacaokd"
    
   tags = {
     Name        = "bkt"

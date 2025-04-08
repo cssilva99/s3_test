@@ -9,3 +9,4 @@ resource "aws_s3_bucket" "b" {
     Owner       = "Narendra Yala",
     DataType    = "Test files"  
   }
+}

@@ -1,12 +1,10 @@
-resource "aws_s3_bucket" "sadsf" {
-  bucket = "sadsf"
+resource "aws_s3_bucket" "example" {
+  bucket = "example"
 }
 
-resource "aws_s3_bucket" "sourcebusdfsdfdsfsdcket" {
-  bucket = "sourcebusdfsdfdsfsdcket"
+resource "aws_s3_bucket_public_access_block" "example" {
+  bucket = "${aws_s3_bucket.example.id}"
 
-  logging {
-    target_bucket = "${aws_s3_bucket.sadsf.id}"
-    target_prefix = "log/"
-  }
+  block_public_acls   = true
+  block_public_policy = true
 }
